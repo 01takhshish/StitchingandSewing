@@ -1,0 +1,72 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.wrapper{
+    padding: 2%;
+    width: 80%;
+}
+.text-centre{
+    text-align: center;
+    
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: rgb(12, 86, 151);
+    text-decoration: none;
+    font-size: 23px;
+}
+a:hover{
+    color: aqua;
+}
+
+/* css for menu */
+
+.menu{
+     text-align: center;  
+     border-bottom: 1px solid black;
+     box-shadow: 2px 1px 5px black;;  
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+
+}
+
+.menu ul li a{
+    font-weight: bold;
+    color: blue;
+}
+.menu ul li a:hover{
+    color: aqua;
+}
+
+/* css for main content */
+.content{
+    background-color: rgb(232, 243, 253);
+   
+}
+
+.col{
+    width: 21%;
+    background-color: rgb(241, 234, 234);
+    margin: 1%;
+    float: left;
+}
+
+/* css for footer */
+
+.footer{
+    background-color: rgb(170, 198, 198);
+}

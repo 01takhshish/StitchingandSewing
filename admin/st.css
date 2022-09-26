@@ -1,0 +1,157 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.wrapper{
+    padding: 2%;
+    width: 85%;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+/* .text-centre{
+    text-align: center;
+} */
+
+.menu ul li a{
+    color: rgb(12, 151, 70);
+    text-decoration: none;
+    font-size: 23px;
+}
+.menu ul li a:hover{
+    color: aqua;
+}.menu{
+    text-align: center;  
+    border-bottom: 1px solid black;
+    box-shadow: 2px 1px 5px black;;  
+}
+.menu ul{
+   list-style-type: none;
+}
+.menu ul li{
+   display: inline;
+   padding: 1%;
+
+}
+
+.menu ul li a{
+   font-weight: bold;
+   color: rgb(0, 255, 55);
+}
+.menu ul li a:hover{
+   color: aqua;
+}
+
+.content{
+    background-color: rgb(232, 243, 253);
+    padding: 3%;
+   
+}
+
+.col{
+    width: 23.5%;
+    background-color: rgb(255, 250, 250);
+    margin: 0.5%;
+    float: left;
+}
+/* css for table */
+
+.tbl-full{
+    width: 100%;
+}
+.tbl-half{
+    width:100%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+    
+}
+/* css for button */
+
+.btn-primary{
+    background-color: rgb(19, 94, 253);
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: rgb(23, 25, 192);
+}
+
+
+
+.btn-update{
+    background-color: rgb(15, 218, 99);
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+
+.btn-update:hover{
+    cursor: pointer;
+    background-color: rgb(3, 134, 53);
+}
+.btn-delete{
+    background-color: rgb(250, 21, 21);
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-delete:hover{
+    cursor: pointer;
+    background-color: rgb(150, 60, 53);
+}
+
+/* css for delete massage */
+.success{
+    color: rgb(5, 170, 5);
+}
+
+.error{
+    color:red
+}
+
+/* css for footer */
+
+.footer{
+    background-color: rgb(170, 198, 198);
+}
+
+/* Css for login page */
+
+.login{
+    width: 25%;
+    border: 1px solid gray;
+    margin: 10% auto;
+    padding: 2%;
+}
+.log{
+    width:20%;
+    border-style: none;
+    margin-left: 40%;
+}
+.text-center{
+    text-align: center;
+}

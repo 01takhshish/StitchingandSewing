@@ -1,0 +1,472 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background: url("nature1.jpg");
+    background-size: 100%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+.text-centre{
+    text-align: center;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background: rgb(188, 185, 185);
+  border-radius:10px;
+    border: 1px solid rgba(255, 255,255, 0.3);
+     box-shadow: 2px 2px 15px;
+  color: rgb(217, 35, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:99;
+  box-shadow: 0 0 10px #000;
+  /*text-transform: uppercase;*/
+}
+.lg{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    
+}
+
+#chk1{
+    display: none;
+}
+
+header .logo{
+    flex: 1;
+    width: 25%;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 15px;
+
+}
+
+ul{
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+i{
+    /*color: #fff;*/
+    cursor: pointer;
+}
+
+header .search-box{
+    flex: 1;
+    position: relative;
+    margin-right: 10px;
+}
+
+.search-box input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+    padding-left: px;
+    padding-right: 40px;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(248, 123, 123);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+
+}
+
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+
+
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    } 
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -50%;
+        background: rgb(188, 185, 185);
+        border-radius:10px;
+    border: 1px solid rgba(255, 255,255, 0.3);
+     box-shadow: 2px 2px 15px;
+        height: calc(100vh - 100px);
+        width: 35%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+        position:absolute;
+    } 
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+}
+@media(max-width:600px){
+    header .logo{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+
+    header ul{
+        width: 100%;
+    }
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1%;
+}
+a{
+    color: rgb(12, 86, 151);
+    text-decoration: none;
+    font-size: 23px;
+}
+a:hover{
+    color: aqua;
+}
+/* All headline in the website */
+h2{
+    color: rgb(0, 3, 169);
+    font-size: 2.5rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.9rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* css for slideshow */
+
+
+.img-container{
+    width:100%;
+    display:flex;
+}
+.ghgh{
+    width: 90%;
+    margin: 1%;
+    margin-left: 1%;
+    height: 10%;
+    
+    float: left;
+}
+.rsrs{
+    width: 70%;
+}
+
+/* Food search class */
+
+
+/* css for categories */
+.categories{
+    
+    padding: 2% 2%;
+    
+}
+
+.box{
+    width: 22%;
+    float: left;
+    margin: 3%;
+
+}
+.imgsr{
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+}
+.imgstr{
+    width: 97%;
+    height: 20%;
+    border-radius: 15px;
+}
+.rate{
+    height: 10%;
+    width: 89%;
+    border-radius: 15px;
+}
+.rates{
+    height: 10%;
+    width: 120%;
+    border-radius: 15px;
+}
+.float-container{
+    position: relative;
+  
+}
+.float-text{
+    position: absolute;
+    bottom: 23px;
+    left: 34px;
+    color: aliceblue;
+}
+.float-texts{
+    position: absolute;
+    bottom: 10%;
+    left: 39%;
+    color: aliceblue;
+}
+
+/* css for food menu */
+.food_menu{
+    padding-top: 0%;
+    padding-bottom: 2%;
+}
+.food-menu{
+    border: 1px solid black;
+    width: 18%;
+    padding: 1.3%;
+    float: left;
+    margin: 1%;
+    background-color: white;
+}
+.btn{
+    border: 4px solid rgb(252, 56, 56);
+    background-color: rgb(255, 40, 40);
+    color: white;
+    font-size: 15px;  
+    border-radius: 6px; 
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgb(71, 228, 209);
+}
+/* Css for Images */
+.food_img{
+    width: 190px;
+    height: 270px;
+    border-radius: 15px;
+    margin-right: 5%; 
+}
+.food_imgsyr{
+    width: 100%;
+    height: 10%;
+    border-radius: 15px;
+   
+}
+.food_imgvr{
+    width: 84%;
+    height: 10%;
+    border-radius: 15px;  
+}
+.rs{
+    width: 96%;
+}
+.GG{
+    width: 108%;
+}
+.q{
+    width: 82.8%;
+    margin-left: 8%;
+}
+.ms{
+    width: 92%;
+}
+.tr{
+    width: 103.3%;
+}
+.jj{
+    width: 103.4%;
+}
+.ff{
+    width: 96%;
+}
+.bb{
+    width: 99%;
+}
+
+.kk{
+    width: 90%;
+}
+.ll{
+    width: 91.5%;
+}
+.kas{
+    width: 65%;
+}
+/* ENds of css of images */
+/* for wmen.html images */
+.lk{
+    width: 67%;
+    margin-left: 13%;
+}
+.kk{
+    width: 80%;
+}
+.uk{
+    width: 89.%;
+}
+.qk{
+    width: 88.1%;
+}
+.ok{
+    width: 86%;
+}
+
+
+.food_menu_desc{
+    width: 100%;
+    margin-top: 0%;
+    text-align: center;
+}
+.price{
+    color: red;
+    padding: 2px;
+    font-size: 18px;
+}
+.details{
+     color: rgb(173, 173, 248);
+     font-size: 14px;
+}
+
+/* Css for social section */
+
+.media{
+    background-color: #e7dede;
+}
+
+.media ul li{
+    display: inline;
+    padding: 14px;
+    font-weight: bold; 
+ 
+}
+
+.media ul li a{
+    color: rgb(189, 53, 53);
+   
+}
+.footer{
+    background-color: #e7dede;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+.rprice{
+    font-size: 50px;
+    color: red;
+}
+
+/* css for about page */
+.intro{
+    margin: 2%;
+}
+.men{
+    width: 97%;
+}
+.kid{
+    width: 95%;
+}
+.women{
+    width: 98%;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
